@@ -2,7 +2,7 @@ import { View, Text } from 'react-native'
 import React, { useState } from 'react'
 import HomeScreen from '../Screen/HomeScreen';
 import Analytics from '../Screen/AnalyticScreen';
-import BrowseScreen from '../Screen/BrowseScreen';
+import ProfileScreen from '../Screen/ProfileScreen';
 import CoinsScreen from '../Screen/CoinsScreen';
 import Usage from '../Screen/UsageScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -39,7 +39,7 @@ export default function BottonNavigation() {
               )
           }}/>
 
-        <Tab.Screen name='Browse' component={BrowseScreen} options={{
+        <Tab.Screen name='Profile' component={ProfileScreen} options={{
           tabBarIcon:({color,size}) => (
             <FontAwesome name="search" size={size} color={color} />
             )
